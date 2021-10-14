@@ -1,0 +1,8 @@
+tempdata, viewdata, viewbag
+
+
+生命週期不同，例如TempData經預設傳遞Controller後失效; Viewdata&viewbag僅負責當對當前的View
+ViewBag:(Controller to View且為一個Object，比較像封裝後的ViewData)(通常是Controller action ->view這段)
+ViewData:以"Dictionay Object"的形式存在，所以會存放成鍵值得方式(通常是Controller action ->view這段)
+Tempdata: 在action和action之間傳送，有可以在不同的controller之間傳送，通常存放在session當中
+
